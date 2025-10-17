@@ -67,5 +67,7 @@ def process_clipboard(chain):
 keyboard.add_hotkey("ctrl+t", lambda: process_clipboard(taglish_chain))
 keyboard.add_hotkey("ctrl+g", lambda: process_clipboard(english_chain))
 
-print("Press Ctrl + T to convert to Taglish, Ctrl + G to correct English. Press ESC to exit.")
-keyboard.wait("esc")
+print(
+    "Press Ctrl + T to convert to Taglish, Ctrl + G to correct English. Press ctrl+shift+backspace to exit."
+)
+keyboard.wait("ctrl+shift+backspace")
