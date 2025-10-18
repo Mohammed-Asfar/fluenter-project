@@ -37,7 +37,7 @@ def log_message(msg: str, is_error: bool = False):
 # ----------------------------- #
 
 try:
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0, google_api_key=os.getenv("GOOGLE_API_KEY"))
     parser = PydanticOutputParser(pydantic_object=RewrittenTextModel)
 
     taglish_prompt = PromptTemplate(

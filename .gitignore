@@ -1,1 +1,10 @@
 /.env
+/build/
+/dist/
+/.venv/
+/__pycache__/    
+*.pyc
+*.pyo
+*.pyd
+*.pyds
+*.swp
