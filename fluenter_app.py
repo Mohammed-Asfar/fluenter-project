@@ -17,7 +17,7 @@ from models import RewrittenTextModel
 
 load_dotenv()
 
-LOG_FILE = "clipboard_llm.log"
+LOG_FILE = "fluenter_log.log"
 
 
 def log_message(msg: str, is_error: bool = False):
@@ -114,7 +114,7 @@ def process_clipboard(chain, mode_name: str):
 
 def main():
     print("=" * 60)
-    print("🪄 Clipboard LLM Assistant is running")
+    print("🪄 Fluenter Assistant is running")
     print("Press Ctrl+T → Convert to Tamil (Taglish)")
     print("Press Ctrl+G → Correct English")
     print("Press Ctrl+Shift+Backspace → Exit")
@@ -132,7 +132,7 @@ def main():
         pass
     finally:
         log_message("Service stopped by user.")
-        print("\n🛑 Exiting Clipboard LLM Assistant.")
+        print("\n🛑 Exiting Fluenter Assistant.")
 
 
 # ----------------------------- #
@@ -144,4 +144,4 @@ if __name__ == "__main__":
         main()
     except Exception as e:
         log_message(f"Fatal error: {e}\n{traceback.format_exc()}", is_error=True)
-        print("❌ Fatal error. Check clipboard_llm.log for details.")
+        print("❌ Fatal error. Check fluenter_log.log for details.")

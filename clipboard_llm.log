@@ -1,0 +1,48 @@
+[2025-10-18 12:05:10] [INFO] LLM initialized successfully.
+[2025-10-18 12:05:10] [INFO] Service started. Waiting for hotkeys...
+[2025-10-18 12:05:17] [INFO] Processing Taglish Conversion for text: import pyperclip
+import keyboard
+import time
+im...
+[2025-10-18 12:05:17] [ERROR] Error during Taglish Conversion: 'FieldInfo' object has no attribute 'handlers'
+Traceback (most recent call last):
+  File "D:\Programs\AI Agents\fluenter-project\fluenter_app.py", line 87, in process_clipboard
+    output = chain.run(input=clipboard_text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed Asfar\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\_api\deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed Asfar\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain\chains\base.py", line 605, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed Asfar\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\_api\deprecation.py", line 193, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed Asfar\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain\chains\base.py", line 383, in __call__
+    return self.invoke(
+           ^^^^^^^^^^^^
+  File "C:\Users\Mohammed Asfar\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain\chains\base.py", line 136, in invoke
+    callback_manager = CallbackManager.configure(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohammed Asfar\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\callbacks\manager.py", line 1655, in configure
+    return _configure(
+           ^^^^^^^^^^^
+  File "C:\Users\Mohammed Asfar\AppData\Local\Programs\Python\Python311\Lib\site-packages\langchain_core\callbacks\manager.py", line 2425, in _configure
+    else (local_callbacks.handlers if local_callbacks else [])
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FieldInfo' object has no attribute 'handlers'
+
+[2025-10-18 12:06:59] [INFO] Service stopped by user.
+[2025-10-18 12:07:14] [INFO] LLM initialized successfully.
+[2025-10-18 12:07:14] [INFO] Service started. Waiting for hotkeys...
+[2025-10-18 12:07:20] [INFO] Processing Taglish Conversion for text:  python .\fluenter_app.py
+D:\Programs\AI Agents\...
+[2025-10-18 12:07:51] [INFO] Taglish Conversion complete. Result:  python .\fluenter_app.py
+D:\Programs\AI Agents\fluenter-project\fluenter_app.p
+[2025-10-18 12:08:03] [INFO] Processing Taglish Conversion for text: what are you doing da...
+[2025-10-18 12:08:06] [INFO] Taglish Conversion complete. Result: enna panra da
+[2025-10-18 12:08:31] [INFO] Processing English Correction for text: enna panra da...
+[2025-10-18 12:08:36] [INFO] English Correction complete. Result: What are you doing?
+[2025-10-18 12:08:49] [INFO] Processing English Correction for text: what are your name...
+[2025-10-18 12:08:51] [INFO] English Correction complete. Result: What is your name?
+[2025-10-18 12:21:34] [INFO] Service stopped by user.
